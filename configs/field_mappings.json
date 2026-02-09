@@ -1,0 +1,177 @@
+{
+  "paragraph1_demographics": {
+    "fields": [
+      {
+        "name": "age",
+        "db_table": "subjects",
+        "db_column": "age",
+        "required": true
+      },
+      {
+        "name": "age_units",
+        "db_table": "subjects",
+        "db_column": "age_units",
+        "required": true
+      },
+      {
+        "name": "sex",
+        "db_table": "subjects",
+        "db_column": "sex",
+        "required": true,
+        "value_map": {
+          "M": "male",
+          "F": "female",
+          "MALE": "male",
+          "FEMALE": "female"
+        }
+      },
+      {
+        "name": "race",
+        "db_table": "subjects",
+        "db_column": "race",
+        "required": true
+      },
+      {
+        "name": "ethnicity",
+        "db_table": "subjects",
+        "db_column": "ethnicity",
+        "required": true
+      },
+      {
+        "name": "subject_id",
+        "db_table": "subjects",
+        "db_column": "subject_id",
+        "required": true
+      },
+      {
+        "name": "site_id",
+        "db_table": "subjects",
+        "db_column": "site_id",
+        "required": true
+      },
+      {
+        "name": "study_id",
+        "db_table": "subjects",
+        "db_column": "study_id",
+        "required": true
+      }
+    ]
+  },
+  "paragraph3_treatment": {
+    "fields": [
+      {
+        "name": "actual_treatment",
+        "db_table": "treatment_exposure",
+        "db_column": "actual_treatment",
+        "required": true
+      },
+      {
+        "name": "first_dose_date",
+        "db_table": "treatment_exposure",
+        "db_column": "first_dose_date",
+        "required": true,
+        "format": "date"
+      },
+      {
+        "name": "last_dose_date",
+        "db_table": "treatment_exposure",
+        "db_column": "last_dose_date",
+        "required": true,
+        "format": "date"
+      }
+    ]
+  },
+  "event_details": {
+    "fields": [
+      {
+        "name": "verbatim_term",
+        "db_table": "adverse_events",
+        "db_column": "verbatim_term",
+        "required": true
+      },
+      {
+        "name": "preferred_term",
+        "db_table": "adverse_events",
+        "db_column": "preferred_term",
+        "required": true
+      },
+      {
+        "name": "start_date",
+        "db_table": "adverse_events",
+        "db_column": "start_date",
+        "required": true,
+        "format": "date"
+      },
+      {
+        "name": "end_date",
+        "db_table": "adverse_events",
+        "db_column": "end_date",
+        "required": false,
+        "format": "date"
+      },
+      {
+        "name": "study_day_start",
+        "db_table": "adverse_events",
+        "db_column": "study_day_start",
+        "required": true
+      },
+      {
+        "name": "study_day_end",
+        "db_table": "adverse_events",
+        "db_column": "study_day_end",
+        "required": false
+      },
+      {
+        "name": "severity_grade",
+        "db_table": "adverse_events",
+        "db_column": "severity_grade",
+        "required": true
+      },
+      {
+        "name": "outcome",
+        "db_table": "adverse_events",
+        "db_column": "outcome",
+        "required": true,
+        "value_map": {
+          "RECOVERED/RESOLVED": "recovered/resolved",
+          "RECOVERED/RESOLVED WITH SEQUELAE": "resolved with sequelae (sequelae not specified)",
+          "NOT RECOVERED/NOT RESOLVED": "not recovered/not resolved",
+          "RECOVERING/RESOLVING": "recovering/resolving",
+          "FATAL": "fatal",
+          "UNKNOWN": "unknown"
+        }
+      },
+      {
+        "name": "action_taken",
+        "db_table": "adverse_events",
+        "db_column": "action_taken",
+        "required": true
+      },
+      {
+        "name": "causality",
+        "db_table": "adverse_events",
+        "db_column": "causality",
+        "required": true
+      },
+      {
+        "name": "hospitalization",
+        "db_table": "adverse_events",
+        "db_column": "hospitalization",
+        "required": true
+      },
+      {
+        "name": "life_threatening",
+        "db_table": "adverse_events",
+        "db_column": "life_threatening",
+        "required": true
+      },
+      {
+        "name": "results_in_death",
+        "db_table": "adverse_events",
+        "db_column": "results_in_death",
+        "required": true
+      }
+    ]
+  }
+}
+

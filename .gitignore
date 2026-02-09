@@ -1,0 +1,41 @@
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Output files
+output/*
+!output/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive data
+*.env
+.env
+*.key
+
+# Excel files (optional - uncomment if you don't want to commit raw data)
+# data/raw/*.xlsx
+# data/raw/*.xls

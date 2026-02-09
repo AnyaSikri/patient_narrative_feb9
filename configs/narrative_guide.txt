@@ -1,0 +1,156 @@
+# NARRATIVE GUIDE: WRITING CONVENTIONS
+**Study C-935788-061**
+
+## NARRATIVE STRUCTURE
+
+### Paragraph 1: Demographics & Medical History
+**Required Elements:**
+- Demographic information
+- COVID-19 hospitalization status
+- Medical history
+
+**Conventions:**
+- Medical history: Order by clinical relevance to the SAE/WAE
+- Add medical history onset date ONLY if directly relevant to the case
+
+### Paragraph 2: Concomitant Medications
+**Required Elements:**
+- Concomitant medications at the time of randomization
+
+### Paragraph 3: Study Drug Dosing
+**Required Elements:**
+- Study drug dosing leading up to the SAE/WAE onset
+
+**Critical Rules:**
+- ❌ **DO NOT SAY:** "last dose"
+- ✅ **USE INSTEAD:** "most recent dose"
+- For multi-event narratives, state: "…prior to the [first event] [first and second events] [both events] [all 3/4/etc events]…"
+
+### Event Description Paragraphs
+**Required Elements:**
+- Event term
+- Event severity
+- Event onset/stop dates
+- Event outcome
+- Study drug action taken and relevant dose adjustments
+- Study drug relationship and other etiology per the Investigator
+
+## TERMINOLOGY RULES
+
+### Event Terms
+**Rule:** Use Preferred Terms (PT) consistently throughout the narrative.
+
+**Special Case:** If the Verbatim Term (VT) is more specific than the PT, add the VT parenthetically after the PT consistently throughout.
+
+**Example:** "…cardiac failure (worsening cardiac failure)…"
+
+### Study Day Numbers
+**Rule:** Add Study Day # after the calendar date ONLY for these 3 dates:
+1. SAE/WAE onset date
+2. SAE/WAE stop date
+3. Study drug dosing dates
+
+### Dose at Event Onset
+**Rule:** Add the dose at event onset ONLY if needed for clarity.
+
+**Format:** "On [date], while receiving study drug at [dose], the subject experienced the SAE/WAE of xxx"
+
+## REQUIRED SENTENCE TEMPLATES
+
+### Hospitalization Events
+
+#### Template 1: Development + Hospitalization
+✅ **CORRECT:**
+"On [date], the subject developed [symptoms] and was hospitalized due to the SAE of [event term]."
+
+❌ **INCORRECT:**
+"On [date], the subject experienced the SAE of xxx, which required hospitalization and was associated with [symptoms]."
+
+#### Template 2: Hospitalization + Presentation
+✅ **CORRECT:**
+"On [date], the subject was hospitalized due to the SAE of [event term]. The subject presented with [symptoms]."
+
+#### Template 3: Fatal Event
+✅ **CORRECT:**
+"On [date], the subject was hospitalized for the fatal SAE of [event term]."
+
+#### Template 4: Medically Significant
+✅ **CORRECT:**
+"On [date], the subject developed the medically significant SAE of [event term]."
+
+#### Template 5: Prolonged Hospitalization
+✅ **CORRECT:**
+"On [date], the subject experienced the SAE of [event term], which prolonged hospitalization."
+
+### Dechallenge/Rechallenge Statements
+**Critical Rule:** Use past perfect verb tense for SAE events
+
+#### Interrupted + Restarted
+✅ **CORRECT:**
+"Study drug dosing had been interrupted due to the SAE of [event term]; the event abated after study drug was held. The event did not reoccur after study drug was restarted."
+
+#### Permanently Discontinued
+✅ **CORRECT:**
+"Study drug dosing had been permanently discontinued due to the SAE of [event term]; the event abated after study drug was stopped."
+
+### Not Applicable Drug Action
+✅ **CORRECT:**
+"The action taken with study drug due to the SAE of [event term] was considered not applicable."
+
+## PROHIBITED PHRASES & CORRECTIONS
+
+| ❌ DO NOT SAY | ✅ SAY INSTEAD |
+|---------------|----------------|
+| "last dose" | "most recent dose" |
+| "subject presented with [workup results]" | "subject presented with [symptoms]" |
+| "were not considered clinically significant" | "were considered not clinically significant" |
+| "resolved with sequelae (not specified)" | "resolved with sequelae (sequelae not specified)" |
+
+## PRESENTATION RULE: Symptoms vs. Workup Results
+
+**Rule:** Clearly distinguish symptoms from workup/test results.
+
+## LABORATORY VALUES
+
+### Reference Ranges
+**Rule:** Insert laboratory normal ranges ONLY at first mention of each laboratory value.
+
+**If range not reported:**
+"…(reference range[s] not provided)."
+
+### Weight Gain
+**Rule:** Include actual weight followed parenthetically by the rate of weight gain.
+
+**Example:** "136 kg (1.3 kg in 8 days)" or "weight gain of 4 kg (4 kg in 2 days)"
+
+## ABBREVIATIONS
+
+### General Rule
+- Treat each narrative as a standalone document when applying abbreviations at first use
+- Define abbreviations at first use
+
+### Common Abbreviations (NO definition needed)
+Do NOT define these common abbreviations:
+- CT, MRI, IV, PO, QD, BID, ECG, ER
+
+## SPECIAL NOTES BY EVENT TYPE
+
+### Infection Events
+**Required Elements:**
+- Include WBC (white blood cell count)
+- Include absolute neutrophil count
+
+**Note:** % neutrophils are not as clinically relevant (do not include)
+
+### Liver Events
+**Required Elements:**
+- Include calculations for >xx × ULN for elevated LFT values
+- Include x.x × Baseline at SAE/WAE onset ONLY if the Baseline LFT value is above ULN
+
+## DATA VERIFICATION RULES
+
+### Event Recurrence
+**Critical Rule:** Do not automatically trust the MedWatch if it says "It is unknown if the event reoccurred after study drug was restarted."
+
+**Action Required:** Check the AE listing to confirm whether the event reoccurred or not.
+

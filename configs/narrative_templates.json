@@ -1,0 +1,158 @@
+{
+  "sae_hospitalization": {
+    "template_id": "SAE_HOSP_V1",
+    "description": "Template for SAEs requiring hospitalization",
+    "applicable_when": {
+      "serious_event": "Y",
+      "hospitalization": "Y"
+    },
+    "paragraphs": [
+      {
+        "number": 1,
+        "section": "Demographics",
+        "template": "The subject was a {age}-year-old {sex} {race} {ethnicity} subject (Subject {subject_id}, Site {site_id}) enrolled in Study {study_id}."
+      },
+      {
+        "number": 2,
+        "section": "Concomitant Medications",
+        "template": "Concomitant medication information was not available.",
+        "note": "This is placeholder - CM data not in POC scope"
+      },
+      {
+        "number": 3,
+        "section": "Study Drug Dosing",
+        "template": "The subject received the first dose of {actual_treatment} on {first_dose_date}. The most recent dose prior to the event was on {last_dose_date}."
+      },
+      {
+        "number": 4,
+        "section": "Event Description",
+        "template": "On {start_date} (Study Day {study_day_start}), the subject was hospitalized due to the SAE of {preferred_term}.",
+        "variations": {
+          "with_end_date": "The event {outcome} on {end_date} (Study Day {study_day_end}).",
+          "without_end_date": "The event {outcome}."
+        }
+      },
+      {
+        "number": 5,
+        "section": "Study Drug Action",
+        "template": "The action taken with study drug was {action_taken}. The Investigator assessed the event as {causality} to study drug."
+      }
+    ]
+  },
+  "sae_medically_important": {
+    "template_id": "SAE_MED_IMP_V1",
+    "description": "Template for medically important SAEs (no hospitalization)",
+    "applicable_when": {
+      "serious_event": "Y",
+      "hospitalization": "N",
+      "other_medically_important": "Y"
+    },
+    "paragraphs": [
+      {
+        "number": 1,
+        "section": "Demographics",
+        "template": "The subject was a {age}-year-old {sex} {race} {ethnicity} subject (Subject {subject_id}, Site {site_id}) enrolled in Study {study_id}."
+      },
+      {
+        "number": 2,
+        "section": "Concomitant Medications",
+        "template": "Concomitant medication information was not available."
+      },
+      {
+        "number": 3,
+        "section": "Study Drug Dosing",
+        "template": "The subject received the first dose of {actual_treatment} on {first_dose_date}. The most recent dose prior to the event was on {last_dose_date}."
+      },
+      {
+        "number": 4,
+        "section": "Event Description",
+        "template": "On {start_date} (Study Day {study_day_start}), the subject developed the medically significant SAE of {preferred_term}.",
+        "variations": {
+          "with_end_date": "The event {outcome} on {end_date} (Study Day {study_day_end}).",
+          "without_end_date": "The event {outcome}."
+        }
+      },
+      {
+        "number": 5,
+        "section": "Study Drug Action",
+        "template": "The action taken with study drug was {action_taken}. The Investigator assessed the event as {causality} to study drug."
+      }
+    ]
+  },
+  "sae_generic": {
+    "template_id": "SAE_GENERIC_V1",
+    "description": "Generic template for any SAE (fallback)",
+    "applicable_when": {
+      "serious_event": "Y"
+    },
+    "paragraphs": [
+      {
+        "number": 1,
+        "section": "Demographics",
+        "template": "The subject was a {age}-year-old {sex} {race} {ethnicity} subject (Subject {subject_id}, Site {site_id}) enrolled in Study {study_id}."
+      },
+      {
+        "number": 2,
+        "section": "Concomitant Medications",
+        "template": "Concomitant medication information was not available."
+      },
+      {
+        "number": 3,
+        "section": "Study Drug Dosing",
+        "template": "The subject received the first dose of {actual_treatment} on {first_dose_date}. The most recent dose prior to the event was on {last_dose_date}."
+      },
+      {
+        "number": 4,
+        "section": "Event Description",
+        "template": "On {start_date} (Study Day {study_day_start}), the subject experienced the SAE of {preferred_term}.",
+        "variations": {
+          "with_end_date": "The event {outcome} on {end_date} (Study Day {study_day_end}).",
+          "without_end_date": "The event {outcome}."
+        }
+      },
+      {
+        "number": 5,
+        "section": "Study Drug Action",
+        "template": "The action taken with study drug was {action_taken}. The Investigator assessed the event as {causality} to study drug."
+      }
+    ]
+  },
+  "ae_non_serious": {
+    "template_id": "AE_NON_SERIOUS_V1",
+    "description": "Template for non-serious adverse events",
+    "applicable_when": {
+      "serious_event": "N"
+    },
+    "paragraphs": [
+      {
+        "number": 1,
+        "section": "Demographics",
+        "template": "The subject was a {age}-year-old {sex} {race} {ethnicity} subject (Subject {subject_id}, Site {site_id}) enrolled in Study {study_id}."
+      },
+      {
+        "number": 2,
+        "section": "Concomitant Medications",
+        "template": "Concomitant medication information was not available."
+      },
+      {
+        "number": 3,
+        "section": "Study Drug Dosing",
+        "template": "The subject received the first dose of {actual_treatment} on {first_dose_date}. The most recent dose prior to the event was on {last_dose_date}."
+      },
+      {
+        "number": 4,
+        "section": "Event Description",
+        "template": "On {start_date} (Study Day {study_day_start}), the subject experienced the adverse event of {preferred_term}.",
+        "variations": {
+          "with_end_date": "The event {outcome} on {end_date} (Study Day {study_day_end}).",
+          "without_end_date": "The event {outcome}."
+        }
+      },
+      {
+        "number": 5,
+        "section": "Drug Action & Assessment",
+        "template": "The action taken with study drug was {action_taken}. The Investigator assessed the event as {causality} to study drug."
+      }
+    ]
+  }
+}
