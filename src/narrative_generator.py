@@ -86,13 +86,18 @@ class NarrativeGenerator:
                 LOGGER.warning("Using hospitalization template as ultimate fallback")
                 return template
         
-        # Priority 5: Non-serious AE
-        if serious == "N":
-            template = self.templates.get("ae_non_serious")
-            if template:
+        # Priority 5: Non-serious AE (also default when serious flag is missing)
+        template = self.templates.get("ae_non_serious")
+        if template:
+            if serious != "N":
+                LOGGER.warning(
+                    "Serious event flag is '%s' (not Y or N); defaulting to non-serious template",
+                    serious or "(empty)",
+                )
+            else:
                 LOGGER.info("Selected template %s (non-serious AE)", template["template_id"])
-                return template
-        
+            return template
+
         # If we get here, something is wrong
         raise ValueError(
             f"No suitable template found. Event data: serious={serious}, "
