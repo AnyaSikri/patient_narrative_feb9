@@ -103,10 +103,27 @@ This POC generates narratives for:
 3. Subject C-906289-002-0422-001, Seq 17 (GI hemorrhage)
 ... and 9 more SAEs
 
+## Streamlit Demo UI
+
+The project includes a web-based demo UI built with [Streamlit](https://streamlit.io/), an open-source Python framework that turns Python scripts into interactive web apps with no frontend code required. Streamlit runs locally on your machine — all data stays on your computer and nothing is sent to Streamlit's servers, so it is safe to use with sensitive clinical data.
+
+To launch the demo:
+```bash
+export OPENAI_API_KEY="sk-your-key-here"  # optional, for AI-enhanced narratives
+streamlit run src/app.py
+```
+
+The UI lets you select a patient and adverse event, view the source data (demographics, treatment, event details), generate a narrative live, and download it as a Word document.
+
+## Adverse Event Dataset
+
+The source data (`data/raw/adae.xlsx`) is an ADAE (Analysis Dataset for Adverse Events) file from Study C-935788-061. It contains 162 treatment-emergent adverse events across 16 subjects, including 12 serious adverse events (SAEs) across 7 subjects. Fields include demographics, treatment exposure dates, MedDRA-coded event terms, severity grades, seriousness criteria (hospitalization, life-threatening, death), outcomes, actions taken, and causality assessments.
+
 ## Architecture
 
 - Database: SQLite
 - Templates: JSON configuration
 - Output: Word documents (.docx)
-- No external APIs (fully local)
+- UI: Streamlit (Python)
+- No external APIs required (OpenAI enhancement optional)
 
